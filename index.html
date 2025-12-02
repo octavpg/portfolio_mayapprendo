@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayapprendo - El Futuro del Maya</title>
+    <link rel="icon" type="image/png" href="icono.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon"><i class="fas fa-owl"></i></div> 
+            <h1>Mayapprendo</h1>
+        </div>
+        <nav>
+            <button class="btn-outline" onclick="scrollToSection('contact')">Contactar para Colaboración</button>
+            <button class="btn-primary" onclick="abrirPrototipo()">Probar Prototipo</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Mayapprendo: El Futuro Divertido del Maya</h2>
+            <p>Revitalización que conecta la lengua con las nuevas generaciones.</p>
+        </div>
+    </section>
+
+    <section class="section-container challenge">
+        <div class="text-content">
+            <h3>El Desafío</h3>
+            <p>Hoy, menos del <strong>5% de los niños</strong> aprenden maya. Existe una barrera en la enseñanza tradicional que estamos rompiendo.</p>
+            <p>Nuestra misión es transformar la educación cultural en una aventura digital.</p>
+        </div>
+        <div class="visual-demo">
+            <img src="img1.jpeg" alt="Pirámide y App" style="width: 100%; border-radius: 12px;">
+        </div>
+    </section>
+
+    <section class="section-container solution">
+        <h3>Solución</h3>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt icon"></i>
+                <h4>Interfaz Atractiva</h4>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-paw icon"></i>
+                <h4>Mascota Guía</h4>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-gamepad icon"></i>
+                <h4>Lecciones Gamificadas</h4>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-landmark icon"></i>
+                <h4>Contenido Cultural</h4>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-trophy icon"></i>
+                <h4>Sistema de Logros</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container validation-team">
+        <div class="validation-box">
+            <h3>Validación</h3>
+            <p>El prototipo fue probado por <strong>20 estudiantes</strong>.</p>
+            <div class="stat-highlight">
+                <span id="counter">0</span>%
+                <p>de Satisfacción</p>
+            </div>
+        </div>
+
+        <div class="team-box">
+            <h3>Equipo</h3>
+            <ul>
+                <li><strong>Líder:</strong> Danna Carolina</li>
+                <li>Nicoles Elizabeth</li>
+                <li>Maru Perdomo Valdez</li>
+                <li>Eithel Gabriel Soberanis</li>
+                <li>Octavio Pérez</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-container roadmap" id="contact">
+        <h3>Colabora con Nosotros</h3>
+        
+        <div class="contact-layout">
+            <div class="contact-form-card">
+                <h4>Contactar para Colaboración</h4>
+                <form id="collabForm">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="text" placeholder="Asunto" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <textarea placeholder="Enviar Mensaje" rows="4"></textarea>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="prototype-card">
+                <h4>¿Te apasiona el futuro? ¡Queremos colaborar!</h4>
+                <p>¡Prueba el Prototipo Ahora!</p>
+                
+                <div class="qr-area">
+                    <img src="Mayapprendo.png" alt="Código QR" style="width: 300px; height: 300px;">
+                    <button class="btn-primary" onclick="abrirPrototipo()">Probar Prototipo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mayapprendo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
